@@ -1,0 +1,229 @@
+
+:root {
+    --wine-red: #7b1e3a;
+    --light-red: #a63d5a;
+    --white: #ffffff;
+    --soft-white: #f7f7f7;
+    --gray: #666666;
+    --border: #e2e2e2;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: var(--wine-pink);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: var(--soft-white);
+    color: #222;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+.dashboard-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.dash-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--wine-red);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.dash-btn:hover {
+    background: var(--light-red);
+}
+
+.dash-btn.active {
+    background: #5a1228;
+}
+
+/* MODULE CARD */
+.module-card {
+    max-width: 900px;
+    margin: 25px auto;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* HEADER */
+.module-label {
+    background: var(--wine-red);
+    color: var(--white);
+    padding: 18px 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* EXERCISE HEADER */
+.exercise-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.ex-title {
+    color: var(--wine-red);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ACTIVITY AREA */
+.activity-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px;
+    justify-content: center;
+}
+
+/* EXERCISE BOX */
+.exercise-box {
+    width: 160px;
+    height: 100px;
+    background: var(--white);
+    border: 2px solid var(--wine-red);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 10px;
+}
+
+.exercise-box:hover {
+    background: #fbecef;
+}
+
+.btn-label {
+    color: var(--wine-red);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* SMALL BUTTONS */
+.activity-bar button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: var(--wine-red);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.activity-bar button:hover {
+    background: var(--light-red);
+}
+
+/* TERMINAL VIEW */
+.terminal-view {
+    background: var(--white);
+    padding: 30px;
+    min-height: 250px;
+    border-top: 1px solid var(--border);
+    color: #333;
+}
+
+/* ACTION BUTTON */
+.action-btn {
+    background: var(--wine-red);
+    color: var(--white);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.action-btn:hover {
+    background: var(--light-red);
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--wine-red);
+}
+
+/* HIDDEN */
+.hidden {
+    display: none !important;
+}
+
+/* FLEX GRID */
+.ex4-container-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* INPUT GROUP */
+.input-group {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--wine-red);
+}
+
+/* SCORE AREA */
+.score-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.score-row {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DURAN, CRISTINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>EXERCISES <span class="accent"></span></h1>
+    </header>
+
+    <nav class="dashboard-controls">
+        <button class="dash-btn" onclick="showSection('home')">HOME</button>
+        <button class="dash-btn" onclick="showSection('contact')">CONTACT</button>
+        <button class="dash-btn" onclick="showSection('exercises')">WEEKLY EXERCISES</button>
+    </nav>
+
+    <main id="displayArea">
+        <section id="home" class="module-card">
+            <div class="module-label">HELLO!</div>
+            <div class="terminal-view">
+                <h2>Welcome to my Portfolio</h2>
+            </div>
+        </section>
+
+        <section id="contact" class="module-card hidden">
+            <div class="module-label">Contact</div>
+            <div class="terminal-view">
+                <p>Email: cristineduran245@gmail.com</p>
+                <p>Location: Region VIII, Philippines</p>
+            </div>
+        </section>
+
+        <section id="exercises" class="module-card hidden">
+            <div class="module-label">Laboratory Modules</div>
+            <div class="activity-bar">
+                <button class="action-btn exercise-box" onclick="toggleEx('ex2')"><span class="btn-label">2</span></button>
+                <button class="action-btn exercise-box" onclick="toggleEx('ex3')"><span class="btn-label">3</span></button>
+                <button class="action-btn exercise-box" onclick="toggleEx('ex4')"><span class="btn-label">4</span></button>
+            </div>
+
+            <div id="ex2-container" class="hidden">
+                <div class="exercise-header">
+                    <h2 class="ex-title">EXERCISE 2</h2>
+                </div>
+                <div class="activity-bar tiny">
+                    <button onclick="ex2_act1()">1</button><button onclick="ex2_act2()">2</button>
+                    <button onclick="ex2_act3()">3</button><button onclick="ex2_act4()">4</button>
+                    <button onclick="ex2_act5()">5</button><button onclick="ex2_act6()">6</button>
+                    <button onclick="ex2_act7()">7</button>
+                </div>
+                <div id="content1" class="terminal-view"></div>
+            </div>
+
+            <div id="ex3-container" class="hidden">
+                <div class="exercise-header">
+                    <h2 class="ex-title">EXERCISE 3</h2>
+                </div>
+                <div class="activity-bar tiny">
+                    <button onclick="ex3_act1()">1</button><button onclick="ex3_act2()">2</button>
+                    <button onclick="ex3_act3()">3</button><button onclick="ex3_act4()">4</button>
+                    <button onclick="ex3_act5()">5</button><button onclick="ex3_act6()">6</button>
+                    <button onclick="ex3_act7()">7</button><button onclick="ex3_act8()">8</button>
+                </div>
+                <div id="content2" class="terminal-view"></div>
+            </div>
+
+            <div id="ex4-container" class="hidden">
+                <div class="exercise-header">
+                    <h2 class="ex-title">EXERCISE 4</h2>
+                </div>
+                <div class="activity-bar tiny">
+                    <button onclick="ex4_act1()">1</button>
+                </div>
+                <div id="content3" class="terminal-view"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
